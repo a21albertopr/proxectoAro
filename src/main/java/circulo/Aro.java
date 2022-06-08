@@ -6,7 +6,8 @@ package circulo;
  */
 public class Aro {
     public static final double MINIMO = 0.0;
-
+    public static final double LIMITERADIO = 0.0 ;
+            
     private int CoordenadaX;
     private int coordenadaY;
     private double radio;
