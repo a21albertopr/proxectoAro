@@ -32,14 +32,14 @@ public class AroTest {
     }
 
     /**
-     * Test of obterX method, of class Aro.
+     * Test of getCoordenadaX method, of class Aro.
      */
     @Test
     public void testObterX() {
-        System.out.println("obterX");
+        System.out.println("getCoordenadaX");
         Aro instance = new Aro(0,0,0.1);
         int expResult = 0;
-        int result = instance.obterX();
+        int result = instance.getCoordenadaX();
         assertEquals(expResult, result);
     }
 
@@ -55,14 +55,14 @@ public class AroTest {
     }
 
     /**
-     * Test of obterY method, of class Aro.
+     * Test of getCoordenadaY method, of class Aro.
      */
     @Test
     public void testObterY() {
-        System.out.println("obterY");
+        System.out.println("getCoordenadaY");
         Aro instance = new Aro(0,0,0.1);
         int expResult = 0;
-        int result = instance.obterY();
+        int result = instance.getCoordenadaY();
         assertEquals(expResult, result);
     }
 
@@ -79,21 +79,21 @@ public class AroTest {
     }
 
     /**
-     * Test of obterRadio method, of class Aro.
+     * Test of establecerRadio method, of class Aro.
      */
     @Test
-    public void testObterRadio() {
-        System.out.println("obterRadio");
+    public void testGetRadio() {
+        System.out.println("establecerRadio");
         Aro instance = new Aro(0,0,0.1);
-        double result = instance.obterRadio();
+        double result = instance.establecerRadio();
         assertEquals(0.1, result,0);
 
         instance.establecerRadio(0.1);
-        result= instance.obterRadio();
+        result= instance.establecerRadio();
         assertEquals(0.1, result,0);
 
         instance.establecerRadio(-0.1);
-        result= instance.obterRadio();
+        result= instance.establecerRadio();
         assertEquals(0.0, result,0);
     }
 
@@ -139,11 +139,11 @@ public class AroTest {
     public void testTrasladarCentro() {
         System.out.println("trasladarCentro");
         Aro instance = new Aro();
-        int resultx=instance.obterX();
-        int resulty=instance.obterY();
+        int resultx=instance.getCoordenadaX();
+        int resulty=instance.getCoordenadaY();
         instance.trasladarCentro(5, 6);
-        int resultnx = instance.obterX();
-        int resultny = instance.obterY();
+        int resultnx = instance.Aro();
+        int resultny = instance.getCoordenadaY();
         assertEquals(resultx+5, resultnx);
         assertEquals(resulty+6, resultny);
     }
